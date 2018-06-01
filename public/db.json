@@ -1,0 +1,38 @@
+{
+    "users": [
+                {  
+                    "username": "vova",
+                    "password": "vvvvvv",
+                    "email": "vova@gmail.com",
+                    "photo": "http://svgur.com/i/65U.svg"
+                },
+                {
+                    "username": "borya",
+                    "password": "vvvvvv",
+                    "email": "vvv@gmail.com",
+                    "photo": "http://svgur.com/i/65U.svg"
+                },
+                {
+                    "username": "gleb",
+                    "password": "vvvvvv",
+                    "email": "gmail@gmail.com",
+                    "photo": "http://svgur.com/i/65U.svg"
+                },
+                {
+                    "username": "inokentiy",
+                    "password": "vvvvvv",
+                    "email": "vladik@gmail.com",
+                    "photo": "http://svgur.com/i/65U.svg"
+                },
+                {
+                    "username": "ventseslav",
+                    "password": "vvvvvv",
+                    "email": "vovan@gmail.com",
+                    "photo": "http://svgur.com/i/65U.svg"
+                }
+                
+            ]
+}
+
+
+
