@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import { Grid, Image, List, Input, Container, Button, Modal } from 'semantic-ui-react'
 import './App.css';
-import AddUserPage from './containers/addUserPage'
 
 const doc = document;
 
@@ -111,6 +110,7 @@ class App extends Component {
 
   render() {
 
+
     return (
       <Grid>
         <Grid.Row>
@@ -130,7 +130,23 @@ class App extends Component {
                   <Modal trigger={<Button size='mini' color='yellow'>Update</Button>}>
                     <Modal.Header>Update user info</Modal.Header>
                     <Modal.Content>
-                      <AddUserPage />
+                      <Grid>
+                        <Grid.Row>
+                          <Input name='name' placeholder={user.username}/>
+                        </Grid.Row>
+                        <Grid.Row>
+                          <Input name='pass' placeholder={user.company}/>
+                        </Grid.Row>
+                        <Grid.Row>
+                          <Input name='email' placeholder={user.email}/>
+                        </Grid.Row>
+                        <Grid.Row>
+                          <Input type='file'/>
+                        </Grid.Row>
+                        <Grid.Row>
+                          <Button name='addUser' size='large' color='green' onClick={() => {this.updateUser(index)}}>Change</Button>
+                        </Grid.Row>
+                      </Grid>
                     </Modal.Content>
                   </Modal>   
                   <Button size='mini' color='red' onClick={() => {this.deleteUser(index)}}>Delete</Button>
@@ -144,8 +160,7 @@ class App extends Component {
           <Modal trigger={<Button size='large' color='green'>Add</Button>}>
             <Modal.Header>Add User</Modal.Header>
             <Modal.Content>
-              <AddUserPage />
-              {/* <Grid>
+              <Grid>
                 <Grid.Row>
                   <Input placeholder='Name'/>
                 </Grid.Row>
@@ -161,7 +176,7 @@ class App extends Component {
                 <Grid.Row>
                   <Button name='addUser' size='large' color='green' onClick={() => {this.addUser()}}>Add</Button>
                 </Grid.Row>
-              </Grid> */}
+              </Grid>
             </Modal.Content>
           </Modal>   
         </Grid.Row>  
